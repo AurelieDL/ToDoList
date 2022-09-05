@@ -1,11 +1,11 @@
 :root {
-    --dark: #374151;
-    --darker: #1F2937;
-    --darkest: #111827;
-    --gray: #6B7280;
-    --light: #EEE;
-    --pink: #EC4899;
-    --purple: #8B5Cf6;
+    --dark: #012F2FFF;
+    --darker: #012121FF;
+    --darkest: #041818FF;
+    --gray: #A8B1BEFF;
+    --light: #EEEEEEFF;
+    --beige: #e0b273;
+    --darkYellow: #814e05;
 }
 
 * {
@@ -65,7 +65,7 @@ input, button {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--beige), var(--darkYellow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -108,6 +108,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
 #tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
@@ -117,7 +121,7 @@ main {
 }
 
 #tasks .task .content .text:not(:read-only) {
-    color: var(--pink);
+    color: var(--beige);
 }
 
 #tasks .task .actions {
@@ -142,12 +146,12 @@ main {
     opacity: 0.4;
 }
 
-.task .actions .edit {
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+.task .actions .editer {
+    background-image: linear-gradient(to right, var(--beige), var(--darkYellow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.task .actions .delete {
-    color: crimson;
+.task .actions .supprimer {
+    color: #790524;
 }
